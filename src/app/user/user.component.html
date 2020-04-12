@@ -1,0 +1,119 @@
+<div class="main-content" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Registrasi</h4>
+                    </div>
+                    <div class="content">
+                        <div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>No. KTP</label>
+                                        <input type="string" class="form-control" placeholder="No. KTP" id="noKTP" required [(ngModel)]="regis.noKTP" name="noKTP">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="email" class="form-control" placeholder="Email" id="email" required [(ngModel)]="regis.email" name="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Nama Lengkap</label>
+                                        <input type="text" class="form-control" placeholder="Nama Lengkap" id="nama" required [(ngModel)]="regis.nama" name="nama">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Alamat</label>
+                                        <input type="text" class="form-control" placeholder="Alamat" id="alamat" required [(ngModel)]="regis.alamat" name="alamat">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Nomor Telephon</label>
+                                        <input type="number" class="form-control" placeholder="Nomor Telephon" id="noTelp" required [(ngModel)]="regis.noTelp" name="noTelp">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Nama Orang Tua</label>
+                                        <input type="text" class="form-control" placeholder="Nama Orang Tua" id="namaOrangTua" required [(ngModel)]="regis.namaOrangTua" name="namaOrangTua">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Asal Sekolah</label>
+                                        <input type="text" class="form-control" placeholder="Asal Sekolah" id="namaAsalSekolah" required [(ngModel)]="regis.namaAsalSekolah" name="namaAsalSekolah">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Alamat Asal Sekolah</label>
+                                        <input type="text" class="form-control" placeholder="Alamat Asal Sekolah" id="alamatAsalSekolah" required [(ngModel)]="regis.alamatAsalSekolah" name="alamatAsalSekolah">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Matematika</label>
+                                        <input type="number" class="form-control" placeholder="Nilai MTK" id="nilaiMTK" required [(ngModel)]="regis.nilaiMTK" name="nilaiMTK">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Indonesia</label>
+                                        <input type="text" class="form-control" placeholder="Nilai Indonesia" id="nilaiBahasaIndo" required [(ngModel)]="regis.nilaiBahasaIndo" name="nilaiBahasaIndo">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>Inggris</label>
+                                        <input type="text" class="form-control" placeholder="Nilai Inggris" id="nilaiBahasaInggris" required [(ngModel)]="regis.nilaiBahasaInggris" name="nilaiBahasaInggris">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label>MIPA</label>
+                                        <input type="text" class="form-control" placeholder="Nilai MIPA" id="nilaiMIPA" required [(ngModel)]="regis.nilaiMIPA" name="nilaiMIPA" value="nama">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <!-- <label>Status (disabled)</label> -->
+                                        <input type="hidden" class="form-control" disabled id="status" placeholder="pending" value="pending" [(ngModel)]="regis.status" name="status">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-fill pull-right" (click)="insert()">Registration</button>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Tabel Data Reject Mahasiswa</h4>
+                        <p class="category">Universitas Gunadarma</p>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <button type="submit" class="btn btn-info btn-fill pull-right" (click)="update(Regis)">Refresh</button>
+                          <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">No. KTP</th>
+                                        <th rowspan="2">Email</th>
+                                        <th rowspan="2">Nama</th>
+                                        <th rowspan="2">Alamat</th>
+                                        <th rowspan="2">No. Telephone</th>
+                                        <th rowspan="2">Nama Orangtua</th>
+                                        <th rowspan="2">Asal Sekolah</th>
+                                        <th rowspan="2">Alamat Asal Sekolah</th>
+                                        <th colspan="4" style="text-align: center;">Nilai</th>
+                                        <th rowspan="2">Status</th>
+                                    </tr>
+                                    <tr>
+                                        <th>Nilai MTK</th>
+                                        <th>Nilai Bahasa Indonesia</th>
+                                        <th>Nilai Bahasa Inggris</th>
+                                        <th>Nilai MIPA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let reg of regis | async">
+                                        <td>{{ reg.noKTP }}</td>
+                                        <td>{{ reg.email }}</td>
+                                        <td>{{ reg.nama }}</td>
+                                        <td>{{ reg.alamat }}</td>
+                                        <td>{{ reg.noTelp }}</td>
+                                        <td>{{ reg.namaOrangTua }}</td>
+                                        <td>{{ reg.namaAsalSekolah }}</td>
+                                        <td>{{ reg.alamatAsalSekolah }}</td>
+                                        <td>{{ reg.nilaiMTK }}</td>
+                                        <td>{{ reg.nilaiBahasaIndo }}</td>
+                                        <td>{{ reg.nilaiBahasaInggris }}</td>
+                                        <td>{{ reg.nilaiMIPA }}</td>
+                                        <td>{{ reg.status }}</td>
+                                    </tr>
+                                </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
